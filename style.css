@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+}
+
+/*Body Style */
+body {
+    margin: 0;
+    padding: 0;
+    background: #FFFFFF;
+    font-family: 'Chivo', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Mobile Frame */
+.mobile-frame {
+    width: 100%;
+    max-width: 360px;
+    height: 100vh;
+    background-color: #FFFFFF;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+/* Header Section */
+header {
+    width: 100%;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border-bottom: 1px solid #ddd;
+    flex-shrink: 0;
+}
+
+.logo-img {
+    width: 31px;
+    height: 31px;
+}
+
+.dot-img {
+    width: 27px;
+    height: 27px;
+}
+
+header h1 {
+    font-family: 'Chivo', sans-serif;
+    color: #716966;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navigation sub-head Section */
+.sub-head {
+    width: 100%;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    border-bottom: 1px solid #ddd;
+    flex-shrink: 0;
+    gap: 1.5rem;
+}
+
+/* Individual Navigation Item Button  */
+.nav-item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 60px;
+    text-align: center;
+
+    font-family: 'Chivo', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #777;
+    white-space: nowrap;
+}
+
+.nav-item img {
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+
+/* Contacts Icon */
+.nav-icon-contact {
+    width: 25px;
+    height: 22.5px;
+}
+
+.contact-span {
+    color: #E0A64E;
+}
+
+/* Gallery Icon */
+.nav-icon-gallery {
+    width: 24px;
+    height: 20px;
+}
+
+/* Map Icon */
+.nav-icon-map {
+    width: 17px;
+    height: 19.95px;
+}
+
+/* Shortlisted Icon */
+.nav-icon-shortlisted {
+    width: 29px;
+    height: 28px;
+}
+
+/* Sort Icon */
+.nav-icon-sort {
+    width: 31px;
+    height: 25px;
+}
+
+.icon-layer-container {
+    position: relative;
+    width: 25px;
+    height: 21.5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styling for the outer border conatat image  */
+.icon-border-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Styling for the inner contact line */
+.icon-lines-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15.63px;
+    height: 11.25px;
+    object-fit: contain;
+}
+
+.nav-separator-spacing {
+    margin-left: 86px;
+}
+
+/* Shortlisted filter button */
+.shortlisted-filter-btn.active {
+    color: #EB9157;
+    font-weight: 600;
+}
+
+/* Main Content Area  */
+.main1-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+    overflow-y: auto;
+    background-color: white;
+
+}
+
+/* Individual Listing Card Styles */
+.listing-card {
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #EBE0D3;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.listing-card:hover {
+    background-color: #FFFCF2;
+}
+
+.listing-content {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.info h3 {
+    font-family: 'Chivo', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 21px;
+    margin-bottom: 10px;
+    margin-left: 33px;
+    margin-right: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info .star-rating {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 20px;
+    margin-left: 33px;
+
+}
+
+.info .star-rating img {
+    width: 16px;
+    height: 15px;
+}
+
+.info p.description {
+    font-family: 'Chivo', sans-serif;
+    font-size: 10px;
+    color: #000000;
+    margin-bottom: 21px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.info .metrics {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 33px;
+
+}
+
+.info .metrics .metric-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.info .metrics .metric-item:nth-child(1) {
+    margin-right: 25px;
+    margin-left: 29px;
+}
+
+
+.info .metrics .metric-item:nth-child(2) {
+    margin-right: 31px;
+}
+
+.info .metrics strong {
+    font-family: 'Chivo', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    line-height: 1;
+}
+
+.info .metrics span {
+    font-family: 'Chivo', sans-serif;
+    font-size: 10px;
+    color: #000000;
+    white-space: nowrap;
+}
+
+.contact-numbers {
+
+    margin-right: 100px;
+    margin-left: 33px;
+    white-space: nowrap;
+    margin-bottom: 33px;
+
+}
+
+.info .contact-numbers p {
+    font-family: 'Chivo', sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 3px;
+
+}
+
+/* Right Column: Actions Section */
+.actions {
+    display: flex;
+    width: 69px;
+    
+    align-self: flex-start;
+
+}
+
+.divider {
+    width: 1px;
+    background-color: #D0D0D0;
+    margin-top: 27px;
+    margin-bottom: 20px;
+    height: 80%;
+}
+
+.action-buttons-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.actions button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Chivo', sans-serif;
+    font-size: 8px;
+    color: #777;
+    white-space: nowrap;
+    line-height: 1.2;
+    min-width: 60px;
+}
+
+.actions button img {
+    display: block;
+
+
+}
+
+
+.action-btn.details-btn {
+    margin: 21px 30px 10px 30px;
+
+}
+
+.action-btn.hide-btn {
+    margin: 32px 32px 15px 33px;
+}
+
+.action-btn.shortlist-btn {
+    margin: 25px 33px 10px 34px;
+}
+
+.action-btn.report-btn {
+    margin: 25px 35px 35px 34px;
+}
+
+.action-icon-details {
+    width: 23px;
+    height: 22px;
+
+}
+
+.action-icon-hide {
+    width: 17px;
+    height: 15.89px;
+
+}
+
+.action-icon-shortlist {
+    width: 17.25px;
+    height: 20.84px;
+
+}
+
+.action-icon-report {
+    width: 16px;
+    height: 16px;
+
+}
+
+.shortlist-btn.active {
+    color: #EB9157;
+}
