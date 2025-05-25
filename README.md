@@ -10,9 +10,7 @@ This is a simple interactive web project developed as an assignment for **EmptyC
 - [Features](#features)  
 - [Installation & Usage](#installation--usage)  
 - [Code Structure](#code-structure)  
-- [How It Works](#how-it-works)  
 - [Technologies Used](#technologies-used)  
-- [Future Improvements](#future-improvements)  
 - [Contact](#contact)  
 
 ---
